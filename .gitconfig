@@ -1,0 +1,17 @@
+[user]
+	name = XXX
+	email = XXX
+[core]
+	autocrlf = input
+	editor = vim
+[merge]
+	tool = meld
+[color]
+	branch = true
+	ui = auto
+[diff "word"]
+	textconv = strings
+[alias]
+	fresh = "!gitfresh(){ git fetch ${1:-origin} && git checkout ${2:-master} && git pull ${1:-origin} ${2:-master} && git remote prune ${1:-origin}; }; gitfresh"
+[credential]
+	username = XXX
